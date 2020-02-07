@@ -1,0 +1,101 @@
+Sun Oct 20 21:20:02 PDT 2019
+
+*** compiling with clang++ to create an executable called myprogram
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+*** running clang-tidy using options from .clang-tidy
+./simplecompile.sh: line 26: clang-tidy: command not found
+./simplecompile.sh: line 27: clang-tidy: command not found
+
+*** running myprogram
+Starting testPisan01
+* Testing == and !=
+Ending testPisan01
+Starting testPisan03
+* Testing traversal
+Visual check B1:
+                x
+            g
+        f
+    c
+        a
+
+            ___________c____________            
+      _____a______            _____f______      
+   __N___      __N___      __N___      __g___   
+  N     N     N     N     N     N     N     x   
+
+Ending testPisan03
+Starting custom testing
+Testing if BST is Empty: 0
+            7
+        5
+    3
+            2
+        1
+
+      _____3______      
+   __1___      __5___   
+  N     2     N     7   
+
+ss is: 12357
+Testing Degenerate BST rebalance
+            7
+        6
+            5
+    4
+            3
+        2
+            1
+
+      _____4______      
+   __2___      __6___   
+  1     3     5     7   
+
+Testing Array to Bst constructor
+            5
+        4
+    3
+            2
+        1
+
+      _____3______      
+   __1___      __4___   
+  N     2     N     5   
+
+Testing Rebalance with strings
+            g
+        f
+            e
+    d
+            c
+        b
+            a
+
+      _____d______      
+   __b___      __f___   
+  a     c     e     g   
+
+Testing Copy Constructor
+            g
+        f
+            e
+    d
+            c
+        b
+            a
+
+      _____d______      
+   __b___      __f___   
+  a     c     e     g   
+
+Ending custom testing
+Done!
+
+*** running with valgrind
+./simplecompile.sh: line 36: valgrind: command not found
+*** cleaning up, deleting myprogram
+Sun Oct 20 21:20:04 PDT 2019
